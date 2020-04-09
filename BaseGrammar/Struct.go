@@ -5,16 +5,16 @@ type ages int
 
 // 用struct声明一个自定义的类型
 type Person struct {
-	name string
-	age ages // 这里用了自定义类型，其实就是int
+	name  string
+	age   ages // 这里用了自定义类型，其实就是int
 	phone string
 }
 
 type Student struct {
-	Person // 匿名字段，默认继承Person的所有字段
-	int //基础类型也可以用作匿名字段
-	phone string // 如果有冲突字段，优先取外层的
-	grade string
+	Person        // 匿名字段，默认继承Person的所有字段
+	int           //基础类型也可以用作匿名字段
+	phone  string // 如果有冲突字段，优先取外层的
+	grade  string
 }
 
 // method也可以继承

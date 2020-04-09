@@ -12,7 +12,7 @@ func main() {
 	println("==============================")
 
 	// 用range来遍历字典
-	numbers := map[string]int{"one": 1, "two": 2, "three" : 3}
+	numbers := map[string]int{"one": 1, "two": 2, "three": 3}
 	for key, value := range numbers {
 		println(key, ": ", value)
 	}
